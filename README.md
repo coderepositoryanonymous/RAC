@@ -186,13 +186,13 @@ We also considers  different  number of OS  types in each augmented  benchmark d
 
 More specifically for seed 0 and use Bitbrains of three OS testing instances:
 
-- train CCGP run `java -jar rac.jar CCGP_OS3_Bitbrains.params 0 1 0 training ./outputs/Bitbrains_CCGP_3OS`
-- train GPGP run `java -jar rac.jar CCGP_OS3_Bitbrains.params 0 1 1 training ./outputs/Bitbrains_GPGP_3OS`
+- train Evo/Evo run `java -jar rac.jar CCGP_OS3_Bitbrains.params 0 1 0 training ./outputs/Bitbrains_CCGP_3OS`
+- train Evo/Hybrid-Evo run `java -jar rac.jar CCGP_OS3_Bitbrains.params 0 1 1 training ./outputs/Bitbrains_GPGP_3OS`
 
 To testing, make sure you put right evolved rules in outputs/PM_Tree/bestGPTree_0.txt and outputs/VM_Tree/bestGPTree_0.txt, where 0 refers to seed id.
 
-- test CCGP run `java -jar rac.jar CCGP_OS3_Bitbrains.params 0 1 0 testing ./outputs/Bitbrains_CCGP_3OS`
-- test GPGP run `java -jar rac.jar CCGP_OS3_Bitbrains.params 0 1 1 testing ./outputs/Bitbrains_GPGP_3OS`
+- test Evo/Evo run `java -jar rac.jar CCGP_OS3_Bitbrains.params 0 1 0 testing ./outputs/Bitbrains_CCGP_3OS`
+- test Evo/Hybrid-Evo run `java -jar rac.jar CCGP_OS3_Bitbrains.params 0 1 1 testing ./outputs/Bitbrains_GPGP_3OS`
 - test SubJustFit_FF run `java -jar rac.jar CCGP_OS3_Bitbrains.params 0 1 2 testing`
 
 Note that **SubJustFit_FF** represents that the algorithm contains three rules, 1. Best-Fit with sub rule for allocating containers to VMs 2. JustFit for VM creation, justFit finds the smallest VM for the container to create 3. First-Fit for VM allocation
