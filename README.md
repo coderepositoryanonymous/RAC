@@ -176,8 +176,8 @@ We also considers  different  number of OS  types in each augmented  benchmark d
    	- the third parameter is the number of run.
    	
    	- the fourth parameter: 
-      - 0 refers to **CCGP** 
-      - 1 refers to **GPGP** 
+      - 0 refers to **Evo/Evo** 
+      - 1 refers to **Evo/Hybrid-Evo** 
     - the fifth parameter:
     	  - training
       - testing
